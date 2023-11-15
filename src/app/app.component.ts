@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  sliderPosition = '-100%';
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.sliderPosition = '0';
+    }, 500);
+  }
 }
