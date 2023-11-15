@@ -50,7 +50,10 @@
     height: 2px;
     background-color: rgb(219, 20, 20);
 }
-
+.image{
+    width: 200px;
+    height: 50px;
+}
   
 
 @media (max-width: 767px) {
