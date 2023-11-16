@@ -1,0 +1,14 @@
+.iconContainer{
+    display: flex;
+    width: 12%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 220px;
+}

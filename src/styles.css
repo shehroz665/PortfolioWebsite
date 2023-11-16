@@ -18,3 +18,7 @@ body { margin: 0;padding: 0;font-family:'Lucida Sans', 'Lucida Sans Regular', 'L
 .grey{
     color: gray;
 }
+.icon{
+    width: 120px;
+    height: 120px;
+}
