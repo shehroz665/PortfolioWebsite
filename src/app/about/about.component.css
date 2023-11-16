@@ -1,6 +1,6 @@
 .iconContainer{
     display: flex;
-    width: 12%;
+    width: 8%;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -13,6 +13,11 @@
     padding:5px 220px;
 
 }
+.leftSlide{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
 .slide{
     opacity: 0;
     transform: translateX(-100%);
@@ -27,10 +32,10 @@
     opacity: 1;
     transform: translateX(0);
   }
-  .slides{
-
-  }
   .imageDiv{
     padding: 48px;
+  }
+  img{
     
+    height: 500px;
   }

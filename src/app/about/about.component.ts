@@ -12,9 +12,13 @@ export class AboutComponent {
   githubIcon=faGithub;
   sizeIcon: SizeProp = '2x';
   isContentVisible = false;
+  isContentVisible1 = false;
   ngOnInit(): void {
     setTimeout(() => {
       this.isContentVisible = true;
-    }, 1000);
+    }, 500);
+    setTimeout(() => {
+      this.isContentVisible1 = true;
+    }, 500);
   }
 }
