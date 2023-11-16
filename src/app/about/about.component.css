@@ -93,6 +93,7 @@ img {
 
 .custom-paragraph {
     text-align: left;
+    color: gray;
     width: 100%;
     max-width: 600px; 
     margin: 0 auto;
@@ -154,19 +155,22 @@ img {
 @media (max-width: 767px) {
     .aboutSection {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding:0;
     }
     .custom-image {
         width: auto;
         height: auto;
     }
+    .custom-about-section{
+        margin-top: 10px;
+    }
     .custom-about-section h1 {
-        text-align: center;
+        text-align: left;
     }
     
     .custom-about-section h2 {
-        text-align: center;
+        text-align: left;
     }
     .icon{
         margin: 10px 0;
