@@ -17,8 +17,5 @@ export class AboutComponent {
     setTimeout(() => {
       this.isContentVisible = true;
     }, 500);
-    setTimeout(() => {
-      this.isContentVisible1 = true;
-    }, 500);
   }
 }
