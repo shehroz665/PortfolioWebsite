@@ -7,7 +7,7 @@ body { margin: 0;padding: 0;font-family:"poppins", sans-serif }
 }
 .innerMain{
     padding: 10px;
-    height: 700px;
+    height: auto;
 }
 .fontFamily{
     font-family: "poppins", sans-serif

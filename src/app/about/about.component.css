@@ -1,4 +1,5 @@
-.iconContainer {
+/* ---------------------------------------old------------------------------------------------------------------ */
+/* .iconContainer {
     display: flex;
     width: 8%;
     flex-direction: row;
@@ -52,5 +53,122 @@ img {
         flex-direction: column;
         padding: 5px 220px;
     }
+    .w-md-75 {
+        width: 25%;
+    }
+} */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* new */
+/* Custom Styles */
+
+.innerMain {
+    padding: 20px;
 
 }
+.aboutSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 220px;
+   
+}
+.custom-about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-about-section h1 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.custom-about-section h2 {
+    text-align: left;
+    font-size: 1.5em;
+    color: #2C5EDE;
+    margin-bottom: 20px;
+}
+
+.custom-paragraph {
+    text-align: left;
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.icon{
+    display: flex;
+    width: 8%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+}
+.icon a {
+    margin-right: 19px;
+    text-decoration: none;
+}
+.iconContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+.iconContainer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.custom-image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.custom-image {
+    width: 100%; 
+    max-width: 500px; 
+    height: 400px;
+}
+.slide {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.leftSlide{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in-left, .slide-in-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+.text{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .aboutSection {
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    .custom-image {
+        width: auto;
+        height: auto;
+    }
+    .custom-about-section h1 {
+        text-align: center;
+    }
+    
+    .custom-about-section h2 {
+        text-align: center;
+    }
+    .icon{
+        margin: 10px 0;
+    }
+} 
