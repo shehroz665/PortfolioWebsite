@@ -1,2 +1,87 @@
+<!-- 
+<div class="mainContainer">
+    <div class="section">
+        <div ngbAccordion class="acordin">
+            <div ngbAccordionItem *ngFor="let item of data;let i = index;">
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton (click)="item.isExpand=!item.isExpand">
+                    <fa-icon [size]="sizeIcon" [icon]="item.icon" [style.color]="'black'"></fa-icon>
+                    {{ item.title }}
+                </button>
+              </h2>
+              <div ngbAccordionCollapse >
+                <div ngbAccordionBody>
+                  <ng-template>
+                    <div *ngFor="let x of data[i].child" >
+                        <p>{{x.lang}}</p>
+                        <ngb-progressbar class="mb-3" type="success" textType="white" [value]="25" [showValue]="true" />
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div> -->
 
-<div class="innerMain">skill works!</div>
+
+
+ <div class="mainContainer">
+    <div class="section">
+        <div ngbAccordion  class="accordin">
+            <div ngbAccordionItem *ngFor="let item of data;let i = index;"  >
+              <h2 ngbAccordionHeader>
+                <button ngbAccordionButton (click)="item.isExpand=!item.isExpand">
+                    <fa-icon [size]="sizeIcon" [icon]="item.icon" [ngStyle]="{ 'color': '#2C5EDE', 'padding': '10px' }"></fa-icon>
+                    {{ item.title }}
+                </button>
+              </h2>
+              <div ngbAccordionCollapse >
+                <div ngbAccordionBody>
+                    <ng-template>
+                        <div class="row">
+                            <div class="col-md-6 mb-3" *ngFor="let x of data[i].child">
+                              <div>
+                                <p>{{ x.lang }}</p>
+                                <ngb-progressbar
+                                  class="mb-3"
+                                  [type]="x.type"
+                                  textType="white"
+                                  [value]="x.efficency"
+                                  [showValue]="true"
+                                ></ngb-progressbar>
+                              </div>
+                            </div>
+                          </div>
+                      </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div> 
+<!-- <div class="mainContainer">
+    <div class="section">
+        <div class="custom-accordion">
+            <div class="accordion-item" *ngFor="let item of data; let i = index;">
+              <div class="accordion-header" (click)="item.isExpand=!item.isExpand">
+                <h2>
+                  <fa-icon [size]="sizeIcon" [icon]="item.icon" [style.color]="'black'"></fa-icon>
+                  {{ item.title }}
+                </h2>
+              </div>
+              <div class="accordion-content" [ngClass]="{ 'expanded': item.isExpand }">
+                <div *ngIf="item.isExpand" class="content">
+                  <ul>
+                    <li *ngFor="let x of item.child">
+                      {{ x.lang }} - Efficiency: {{ x.efficency }}%
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div> -->
+
+  
