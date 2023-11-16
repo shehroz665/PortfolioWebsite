@@ -1,7 +1,7 @@
 <div class="innerMain">
     <!-- <div class="d-flex flex-row justify-content-between px-5"> -->
         <div class="aboutSection">
-        <div class="fontFamily  ">
+        <div [ngClass]="{'slide-in-left': isContentVisible,'slide':true,'fontFamily':true}" >
             <h1>Hi I'm Shehroz</h1>
             <h2>I'm a <span class="spanColor">Full Stack</span> developer</h2>
             <p class="w-75 grey">Experienced Web developer with a focus on Web APIs and Frontend development. Proficient in building and optimizing APIs, as well as creating visually appealing and responsive web interfaces. Skilled in various frontend technologies and dedicated to staying updated with industry trends.</p>
@@ -16,7 +16,7 @@
                 
             </div>
         </div>
-        <div class="p-5">
+        <div  [ngClass]="{'slide-in-right': isContentVisible,'slide':true,'imageDiv':true}">
             <img src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"/>
         </div>
     </div>
