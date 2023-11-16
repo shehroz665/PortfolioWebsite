@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html, body { height: 100%; }
 body { margin: 0;padding: 0;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 .mains{
@@ -7,4 +8,13 @@ body { margin: 0;padding: 0;font-family:'Lucida Sans', 'Lucida Sans Regular', 'L
 .innerMain{
     padding: 10px;
     height: 700px;
+}
+.fontFamily{
+    font-family: "poppins", sans-serif
+}
+.spanColor{
+    color: #2C5EDE;
+}
+.grey{
+    color: gray;
 }
