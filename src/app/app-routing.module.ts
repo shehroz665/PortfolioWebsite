@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {
-    path:'',redirectTo:'portfolio',pathMatch:'full'
+    path:'',redirectTo:'home',pathMatch:'full'
   },
   {
-    path:'portfolio',component:NavbarComponent,
+    path:'home',component:NavbarComponent,
     children:[
+      {
+        path:'',component:MainComponent
+      }
     ]
 
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
