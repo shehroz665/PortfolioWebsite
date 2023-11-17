@@ -6,11 +6,9 @@
     <div class="section">
         <div [ngClass]="{'slide-in-left': isContentVisible, 'slide': true, 'fontFamily': true}" class="custom-about-section">
             <div class="text">
-                <h1 class="">Hi I'm Shehroz</h1>
+                <h1 class="">{{name}}</h1>
                 <h2>I'm a <span class="spanColor">Full Stack</span> developer</h2>
-                <p class="custom-paragraph">
-                    Experienced Web developer with a focus on Web APIs and Frontend development. Proficient in building and optimizing APIs, as well as creating visually appealing and responsive web interfaces. Skilled in various frontend technologies and dedicated to staying updated with industry trends.
-                </p>
+                <p class="custom-paragraph">{{paragraph}}</p>
             </div>
             <div class="icon">
                 <a href="https://www.linkedin.com/in/shehroz-ali-abba3323a/" target="_blank" rel="noopener noreferrer">
