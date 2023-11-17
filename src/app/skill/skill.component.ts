@@ -10,7 +10,7 @@ export class SkillComponent {
   sizeIcon: SizeProp = '1x';
   data:any[]= [
     {
-      title:'Frontend Developer',
+      title:'Frontend Developer ',
       icon:faCode,
       isExpand:false,
       child:[
@@ -32,7 +32,7 @@ export class SkillComponent {
       ]
     },
     {
-      title:'Backend Developer',
+      title:'Backend Developer ',
       icon:faServer,
       isExpand:false,
       child:[

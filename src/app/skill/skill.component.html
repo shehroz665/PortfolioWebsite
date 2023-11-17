@@ -1,32 +1,7 @@
-<!-- 
 <div class="mainContainer">
-    <div class="section">
-        <div ngbAccordion class="acordin">
-            <div ngbAccordionItem *ngFor="let item of data;let i = index;">
-              <h2 ngbAccordionHeader>
-                <button ngbAccordionButton (click)="item.isExpand=!item.isExpand">
-                    <fa-icon [size]="sizeIcon" [icon]="item.icon" [style.color]="'black'"></fa-icon>
-                    {{ item.title }}
-                </button>
-              </h2>
-              <div ngbAccordionCollapse >
-                <div ngbAccordionBody>
-                  <ng-template>
-                    <div *ngFor="let x of data[i].child" >
-                        <p>{{x.lang}}</p>
-                        <ngb-progressbar class="mb-3" type="success" textType="white" [value]="25" [showValue]="true" />
-                    </div>
-                  </ng-template>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-</div> -->
-
-
-
- <div class="mainContainer">
+  <div class="title">
+   <h1>Skills</h1>
+  </div>
     <div class="section">
         <div ngbAccordion  class="accordin">
             <div ngbAccordionItem *ngFor="let item of data;let i = index;"  >

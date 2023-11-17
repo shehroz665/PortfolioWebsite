@@ -7,7 +7,7 @@ body { margin: 0;padding: 0;font-family:"poppins", sans-serif }
 }
 .innerMain{
     padding: 10px;
-    height: auto;
+    height: 700px;
 }
 .fontFamily{
     font-family: "poppins", sans-serif
@@ -29,3 +29,9 @@ body { margin: 0;padding: 0;font-family:"poppins", sans-serif }
     padding: 5px 220px;
    
 }
+.title {
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    
+}
+

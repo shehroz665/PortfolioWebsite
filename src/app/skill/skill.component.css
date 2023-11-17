@@ -31,6 +31,11 @@
   }
   
   @media (max-width: 768px) {
+    .section {
+      display: flex;
+      flex-direction: column;
+      padding:0;
+  }
     .accordin .ngb-accordion-header {
         font-size: 16px;
       }
