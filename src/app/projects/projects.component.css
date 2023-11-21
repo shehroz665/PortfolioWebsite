@@ -16,9 +16,11 @@ li {
   font-family: "poppins", sans-serif;
 
 }
-
-strong,
-.project-title {
+.project-title{
+  font-size: 18px;
+  color: #4f4b4b;
+}
+strong{
   color: #4f4b4b;
 }
 

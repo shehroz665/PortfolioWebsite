@@ -50,11 +50,13 @@
                     </div>
                     <div>
                       <p>{{ item.description }}</p>
-                      <p><strong>Duration:</strong> {{ item.duration }}</p>
-                      <p><strong>University:</strong> {{item.company}}</p>
-                      <p *ngIf="item.link!=''">
-                        <a  [href]="item.link" target="_blank">Project's Link</a>
-                      </p>
+                      <div *ngIf="item.links.length!=0" class="d-flex flex-row">
+                        <div *ngFor="let x of item.links;let i = index" >
+                            <p [ngClass]="{ 'px-2': i %2== 0 }">
+                              <a  [href]="x.url" target="_blank">{{x.name}} {{i!=item.links.length-1 ? ' , ' : ''}}</a>
+                            </p>
+                        </div>
+                      </div>
                     </div>
                   </li>
                 </ul>
