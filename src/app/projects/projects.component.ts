@@ -6,31 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  universityData:any[]=[
-    {
-      title:'Agri Grow (Final Year Project)',
-      duration:'2022 - 2023',
-      description:'Agri Grow is an online marketplace which provides business opportunities for farmers to grow their businesses efficiently.It also helps the farmers to solve their problems with the consultancy of agricultural experts.',
-      company:'FAST NUCES CFD Campus',
-      link:'',
-      status:1, //1 means university project 0 means personal
-    },
-    {
-      title:'Stock Management System',
-      duration:'2019',
-      description:'The stock management software generate stock reports, sales reports, payment reports all types of reports which are necessary for mange our stock will generate in this system using ASP.NET, SQL Management studio,C#.',
-      company:'FAST NUCES CFD Campus',
-      link:'',
-      status:1,
-    },
-    {
-      title:'Visualization of Data Structure',
-      duration:'2020',
-      description:'Visualization of Data Structures Algorithms using SFML.',
-      company:'FAST NUCES CFD Campus',
-      link:'',
-      status:1,
-    },
+  personalData:any[]=[
     {
       title:'Library Management System',
       duration:'2023',
@@ -55,7 +31,29 @@ export class ProjectsComponent {
       link:'https://github.com/ShehrozMalik665/React-Native-Quiz-App-Quizzler',
       status:0,
     },
-    
+  ];
+  universityData:any[]=[
+    {
+      title:'Agri Grow (Final Year Project)',
+      duration:'2022 - 2023',
+      description:'Agri Grow is an online marketplace which provides business opportunities for farmers to grow their businesses efficiently.It also helps the farmers to solve their problems with the consultancy of agricultural experts.',
+      company:'FAST NUCES CFD Campus',
+      link:'',
+    },
+    {
+      title:'Stock Management System',
+      duration:'2019',
+      description:'The stock management software generate stock reports, sales reports, payment reports all types of reports which are necessary for mange our stock will generate in this system using ASP.NET, SQL Management studio,C#.',
+      company:'FAST NUCES CFD Campus',
+      link:'',
+    },
+    {
+      title:'Visualization of Data Structure',
+      duration:'2020',
+      description:'Visualization of Data Structures Algorithms using SFML.',
+      company:'FAST NUCES CFD Campus',
+      link:'',
+    },  
   ];
   professionalData:any[]=[
     {

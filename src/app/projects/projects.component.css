@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
 ul {
   display: flex;
   flex-direction: column;
@@ -13,11 +14,14 @@ li {
   position: relative;
   padding: 0 0 10px 35px;
   font-family: "poppins", sans-serif;
- 
+
 }
-strong,.project-title{
+
+strong,
+.project-title {
   color: #4f4b4b;
 }
+
 li::before {
   content: '';
   position: absolute;
@@ -63,25 +67,11 @@ li.passed::before,
 li.passed::after {
   border-color: dodgerblue;
 }
+
 @media (max-width: 768px) {
   .section {
 
-    padding:0;
-      }
-  ul {
-    font-size: 14px;
+    padding: 0;
   }
 
-  li {
-    padding-left: 25px;
-  }
-
-  li::before {
-    left: 5px;
-  }
-
-  li::after {
-    width: 12px;
-    height: 12px;
-  }
 }

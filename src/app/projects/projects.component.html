@@ -24,7 +24,7 @@
                   </ul>
             </div>
             <div>
-                <h3>Personal Projects</h3>
+                <h3>University Projects</h3>
                 <ul>
                     <li *ngFor="let item of universityData" class="project-item">
                       <div >
@@ -33,7 +33,7 @@
                       <div>
                         <p>{{ item.description }}</p>
                         <p><strong>Duration:</strong> {{ item.duration }}</p>
-                        <p><strong>Project's Status:</strong> {{item.status===1? item.company+',Semester Project': 'Personal Project'}}</p>
+                        <p><strong>University:</strong> {{item.company}}</p>
                         <p *ngIf="item.link!=''">
                           <a  [href]="item.link" target="_blank">Project's Link</a>
                         </p>
@@ -41,6 +41,24 @@
                     </li>
                   </ul>
             </div>
+            <div>
+              <h3>Personal Projects</h3>
+              <ul>
+                  <li *ngFor="let item of personalData" class="project-item">
+                    <div >
+                      <p class="project-title">{{ item.title }}</p>
+                    </div>
+                    <div>
+                      <p>{{ item.description }}</p>
+                      <p><strong>Duration:</strong> {{ item.duration }}</p>
+                      <p><strong>University:</strong> {{item.company}}</p>
+                      <p *ngIf="item.link!=''">
+                        <a  [href]="item.link" target="_blank">Project's Link</a>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+          </div>
         </div>
 
     </div>
