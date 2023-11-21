@@ -9,33 +9,33 @@
                 <h3>Professional Projects</h3>
                   <ul>
                     <li *ngFor="let item of professionalData" class="project-item">
-                      <div class="project-header">
-                        <p>{{ item.title }}</p>
+                      <div >
+                        <p class="project-title">{{ item.title }}</p>
                       </div>
-                      <div class="project-details">
+                      <div>
                         <p>{{ item.description }}</p>
                         <p><strong>Duration:</strong> {{ item.duration }}</p>
                         <p><strong>Company:</strong> {{ item.company }}</p>
                         <p *ngIf="item.link!=''">
-                          <a  [href]="item.link" target="_blank">Visit the site</a>
+                          <a  [href]="item.link" target="_blank">Project's Link</a>
                         </p>
                       </div>
                     </li>
                   </ul>
             </div>
             <div>
-                <h3>Professional Projects</h3>
+                <h3>Personal Projects</h3>
                 <ul>
                     <li *ngFor="let item of universityData" class="project-item">
-                      <div class="project-header">
-                        <p>{{ item.title }}</p>
+                      <div >
+                        <p class="project-title">{{ item.title }}</p>
                       </div>
-                      <div class="project-details">
+                      <div>
                         <p>{{ item.description }}</p>
                         <p><strong>Duration:</strong> {{ item.duration }}</p>
-                        <p><strong>Company:</strong> {{ item.company }}</p>
+                        <p><strong>Project's Status:</strong> {{item.status===1? item.company+',Semester Project': 'Personal Project'}}</p>
                         <p *ngIf="item.link!=''">
-                          <a  [href]="item.link" target="_blank">Visit the site</a>
+                          <a  [href]="item.link" target="_blank">Project's Link</a>
                         </p>
                       </div>
                     </li>
