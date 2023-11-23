@@ -1,3 +1,14 @@
-
-
-<div class="innerMain">certifications works!</div>
+<div class="innerMain">
+    <div class="title">
+        <h1> Certifications</h1>
+    </div>
+    <div class="section">
+        <div class="main">
+            <div *ngFor="let course of data" class="course-card">
+                <h3>{{ course.title }}</h3>
+                <img src="{{ course.url }}" class="course-image" alt="{{ course.title }}">
+                <p>{{ course.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
