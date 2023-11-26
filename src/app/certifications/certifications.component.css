@@ -51,6 +51,7 @@
      display: flex;
      flex-direction: row;
      justify-content: center;
+     align-items: center;
    }
    
    .course-card {
@@ -94,9 +95,32 @@
     height: 300px; 
     border-radius: 5px; 
     margin-bottom: 10px; 
-    padding: 10px;
+   
   }
+  .container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(192, 193, 195);
+    padding: 10px; */
+  }
+
+  .carousel-image {
+    width: 500px;
+    height: 400px;
+    object-fit: cover; 
+  }
+  .carousel-image-container {
+    text-align: center;
+  }
+
    @media (max-width: 768px) {
+    .carousel-image {
+      width: 350px;
+      height: 400px;
+      
+    }
      .section {
        padding: 0;
      }
